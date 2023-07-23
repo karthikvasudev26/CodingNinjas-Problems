@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main() {
+  // Write your code here
+  int num,e=0,o=0;
+  cin>>num;
+  while(num>0)
+  {
+	  int k=num%10;
+	  if(num%2!=0)
+	  o+=k;
+	  else
+	  e+=k;
+	  num/=10;
+  }
+  cout<<e<<" "<<o;
+  return 0;
+}
